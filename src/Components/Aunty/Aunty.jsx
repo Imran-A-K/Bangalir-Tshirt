@@ -1,8 +1,15 @@
 import React from 'react'
+import Cousin from '../Cousin/Cousin'
 
-const Aunty = () => {
+const Aunty = ({ring}) => {
   return (
-    <div>Aunty</div>
+    <div>
+      <h2> Aunty</h2>
+      <section>
+        <Cousin>Abir</Cousin>
+        <Cousin hasFriend={true} ring={ring}>Nibir</Cousin>
+      </section>
+      </div>
   )
 }
 
